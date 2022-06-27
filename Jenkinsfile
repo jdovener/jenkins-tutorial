@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Clone Repo'){
                 steps{
-                    sh "git clone --no-fail https://gitlab.com/qacdevops/chaperootodo_client"
+                    git 'https://gitlab.com/qacdevops/chaperootodo_client'
                 }
             }
             stage('Install Docker and Docker-compose'){
